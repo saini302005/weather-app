@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Weather Application</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="weather-container">
+
+        <h1>
+            Weather Application
+        </h1>
+
+        <p class="subtitle">
+            Search for the current weather of any city.
+        </p>
+
+
+        <div class="search-container">
+
+    <input
+        type="text"
+        id="city-input"
+        placeholder="Enter city name..."
+    >
+
+    <button id="search-button">
+        Search
+    </button>
+
+</div>
+
+<button
+    id="location-button"
+    class="location-button"
+>
+    📍 Use My Location
+</button>
+
+
+        <!-- ==================== MESSAGE ==================== -->
+
+        <p
+            id="message"
+            class="message"
+        ></p>
+
+
+        <!-- ==================== LOADING ==================== -->
+
+        <div
+            id="loading"
+            class="loading hidden"
+        >
+            Loading weather...
+        </div>
+
+
+        <!-- ==================== WEATHER CARD ==================== -->
+
+        <section
+            id="weather-card"
+            class="weather-card hidden"
+        >
+
+            <div class="location">
+
+                <h2 id="city-name">
+                    City
+                </h2>
+
+                <p id="country-name">
+                    Country
+                </p>
+
+            </div>
+
+
+            <!-- Temperature -->
+
+            <div class="temperature">
+
+                <span id="temperature">
+                    --°
+                </span>
+
+            </div>
+
+
+            <div class="weather-status">
+
+    <div
+        id="weather-icon"
+        class="weather-icon"
+    >
+        🌤️
+    </div>
+
+    <p
+        id="weather-condition"
+        class="weather-condition"
+    >
+        Weather
+    </p>
+
+</div>
+
+
+            <!-- Weather Details -->
+
+            <div class="weather-details">
+
+
+                <div class="weather-detail">
+
+                    <h3>
+                        💧 Humidity
+                    </h3>
+
+                    <p id="humidity">
+                        --%
+                    </p>
+
+                </div>
+
+
+                <div class="weather-detail">
+
+                    <h3>
+                        💨 Wind
+                    </h3>
+
+                    <p id="wind-speed">
+                        -- km/h
+                    </p>
+
+                </div>
+
+
+                <div class="weather-detail">
+
+                    <h3>
+                        🌡️ Feels Like
+                    </h3>
+
+                    <p id="feels-like">
+                        --°
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
